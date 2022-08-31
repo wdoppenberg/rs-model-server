@@ -6,11 +6,6 @@ categories = ["ml"]
 version = "0.1.0"
 edition = "2021"
 
-
-[[bin]]
-name = "serving"
-path = "src/bin/serving.rs"
-
 [[bin]]
 name = "model-server"
 path = "src/main.rs"
@@ -22,6 +17,7 @@ path = "src/lib/lib.rs"
 
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
 csv = "1.1"
 rand = "0.8.5"
 itertools = "0.10"
@@ -32,4 +28,5 @@ ndarray-rand = "*"
 serde = "^1"
 serde_json = "^1"
 serde_derive = "^1"
+anyhow = "^1"
 #reqwest = "^0.11"

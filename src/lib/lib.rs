@@ -1,2 +1,1 @@
-use std::error::Error;
-mod lib;
+pub mod app;
